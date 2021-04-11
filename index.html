@@ -1,0 +1,236 @@
+<html>
+    <head>
+<title>Lenovo 8504X Customizer</title>
+<link href="https://i.postimg.cc/6QzDgYX0/LC.png" rel="icon" type="image/x-icon">
+<meta name="description" content="A full guide to root or install custom rom/recovery in lenovo tab 4 8, lenovo 8504x! | KasCust" property="og:description">
+<meta name="description" content="https://i.ibb.co/0Xdk9nC/bg8.jpg" property="og:image">
+<meta content="https://kasroudra.github.io/lecust" property="og:url">
+<meta content="KasCust" property="og:title">
+<style>
+body {
+    margin: 5%;
+    margin-top: 10%;
+    background: url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) repeat;
+    background-size: cover;
+}
+.title {
+    text-align: center;
+}
+span {
+    white-space: pre-line;
+    font-family: 'Times New Roman';
+    color: green;
+}
+h1{
+    color: yellow;
+}
+h2 {
+    color: #808000;
+   font-family: Tahoma; 
+   text-align: center;
+}
+h3 {
+    font-family: Georgia;
+    color: #6495ed;
+}
+h4 {
+    color: #008080;
+    font-size: 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li img{
+    width: 30px;
+    height: 30px;
+}
+ul li {
+    margin: 10px;
+    display: inline-block;
+    list-style: none;
+}
+footer{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="title">
+    <img src="https://i.postimg.cc/6QzDgYX0/LC.png" width="80px" height="80px">
+    
+    <h1 style="color: blue;font-size:40px"><u>LeCust</u></h1>
+<h1><u>Lenovo Tab 4 8 | Lenovo 8504X | Customize!</u></h1>
+<pre>
+    
+</pre>
+</div>
+<h3> Here are necessarry instructions to install custom rom or flashing custom recovery or rooting Lenovo tab 4 8, Lenovo 8504X!</h3>
+<pre>
+
+
+
+</pre>
+<div id ="adbset">
+<h2><u>ADB Setup</u></h2>
+<pre>
+    
+    
+</pre>
+<h4>Requirements:</h4>PC and USB Cable.
+<span>
+    
+Download <a href="https://github.com/koush/adb.clockworkmod.com/releases/latest/download/UniversalAdbDriverSetup.msi">Drivers</a>.
+Download <a href=" https://androidfilehost.com/?fid=962339331459003166">ADB Tools</a>
+</span>
+<h4>Steps:</h4>
+<span>1. Enable "USB Debugging" from Developer Options.
+2. Connect tab with pc. 
+3. Unzip "Platform Tools.zip" or ADB other zip file.
+4. Navigate to unzipped folder
+5. Clear the adress bar and type "cmd" and press enter.
+6. A Command Line/PowerShell window will be opened.
+7. Type "adb devices" in that and press enter.
+8. Select "Remember this computer" and click allow in USB debugging prompt from phone.
+9. If you can't do step 8 you have to search more drivers for your pc. Install proper drivers and repeat from step 2.
+10. If your tab codename appears, then you have successfully setup ADB. Now you can use ADB commands!
+
+
+
+</span>
+</div>
+<div id ="bootloader">
+<h2 align="center"><u>Unlock Bootloader</u></h2>
+<pre>
+    
+    
+</pre>
+<h4>Requirements:</h4>PC, USB Cable and <a href="#adbset">ADB Setup</a>.<br>
+<b>Caution: All data will be lost on factory reset!</b>
+
+<h4>Steps:</h4>
+<span>1. Enable "OEM Unlocking:Allow the bootloader to be unlocked" from Developer Options.
+2. <a href="#adbset">ADB Setup</a>
+3. Type "adb reboot bootloader" and hit enter.
+4. Your tab will boot to fastboot showing FastBoot text with broken android icon.
+5. Type "fastboot devices" and hit enter. If your tab codename appears go to next steps.
+6. Type "fastboot oem unlock-go" and press enter. 
+7. Setup your factory reset tab and navigate to settings. In Developer Options you will see "Your bootloader is already unlocked".
+8. Now you can root, install custom rom or custom recovery!
+
+
+
+</span>
+</div>
+<div id="cusrec">
+<h2><u>Custom Recovery</u></h2>
+<pre>
+    
+    
+</pre>
+<h4> Requirements:</h4>PC, USB Cable, <a href="#bootloader">Unlocked Bootloader</a> and <a href="#adbset">ADB Setup</a>.
+<span>
+
+Download <a href="https://androidfilehost.com/?fid=1322778262903982738">TWRP</a> for 8504X
+
+</span>
+<h4>Steps:</h4>
+<span>
+1. <a href="#adbset">ADB Setup</a>
+2. Type "adb reboot bootloader" and hit enter.
+3. Your tab will boot to fastboot showing FastBoot text with broken android icon.
+4. Type "fastboot devices" and hit enter. If your tab codename appears go to next steps.
+5. Type "fastboot flash recovery" and hit space and drag and drop twrp image file. press enter.
+6. Type "fastboot boot" and hit space and drag and drop twrp image file. press enter.
+7. Your tab will successfully start TWRP recovery. Now it's time to install new OS/ROM!
+
+
+
+</span>
+</div>
+<h2><u>Custom Rom</u></h2>
+<pre>
+    
+    
+</pre>
+<h4> Requirements:</h4><a href="#bootloader">Unlocked Bootloader</a> and <a href="#cusrec">Custom recovery</a>.
+<span>
+    
+Download Custom Rom <a href="https://cloud.mail.ru/public/3KpW/2nV9TsFwJ">LineageOS</a> for 8504X
+Download modified <a href="https://drive.google.com/file/d/15ew22MuvYbVLSlaCMrDazLQSXhhaHoTE/view?usp=drivesdk">LinageOS</a> that is used by me.
+</span>
+<h4>Steps:</h4>
+<span>1. Reboot to <a href="#cusrec">Custom TWRP Recovery</a>.
+2. Click on Wipe. Select system, dalvik-cache and internal storage.
+3. Swipe to right and press home.
+4. Tap on install. Navigate to custom rom file and click on it.
+5. Swipe to right and wait. 
+6. After installation is complete, click on home and select reboot and then tap system.
+7. Custom OS/ROM installation successful!
+
+
+</span>
+<h2><u>Root with custom recovery</u></h2>
+<pre>
+    
+    
+</pre>
+<h4> Requirements:</h4><a href="#bootloader">Unlocked Bootloader</a> and <a href="#cusrec">Custom TWRP Recovery</a>.
+<span>
+    
+Download <a href="https://github.com/topjohnwu/Magisk/releases/download/v21.0/Magisk-v21.0.zip">Magisk</a>
+
+</span>
+<h4>Steps:</h4>
+<span>1. Reboot to custom TWRP recovery. You may use the previous paragraph to start TWRP recovery.
+2. Tap on install. Navigate to magisk file and click on it.
+5. Swipe to right and wait. 
+3. After installation is complete, click on home and select reboot and then tap system.
+7. Root successful!
+
+
+
+</span>
+<h2><u>Root without custom recovery</u></h2>
+<pre>
+    
+    
+</pre>
+<h4> Requirements:</h4>PC, USB Cable, <a href="#adbset">ADB Setup</a> and <a href="#bootloader">Unlocked Bootloader</a>.
+<span>
+    
+Download <a href="https://github.com/topjohnwu/Magisk/releases/download/v22.1/Magisk-v22.1.apk">Magisk</a>
+Download <a href="https://androidfilehost.com/?fid=10763459528675561268">Firmware</a> for 8504X
+
+</span>
+<h4>Steps:</h4>
+<span>1. Unzip the firmware zip file.
+2. Intall magisk manager and open the app.
+3. Click on install after magisk.
+4. Select patch a file.
+5. Navigate to "boot.img" in unzipped firmware.
+6. Select it and press okay/patch. Keep data connection on and wait a while.
+7. Copy magisk_patched.img from download folder of internal storage to pc.
+8. <a href="#adbset">ADB Setup</a>
+9. Type "adb reboot bootloader" and press enter.
+10. Type "fastboot boot" , hit space, drag and drop the patched file and press enter.
+11. Type "fastboot reboot" and press enter.
+12. Root successful!
+
+
+
+</span>
+<h3 align="center"><u>Contact me</u></h3>
+<ul>
+<li><a href="https://facebook.com/KasRoudra"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="facebook"></a></li>
+<li><a href="https://m.me/KasRoudra"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/messenger.svg" alt="messenger"></a></li>
+<li><a href="mailto:kasroudrard@gmail.com"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="email"></a></li>
+</ul>
+<pre>
+    
+</pre>
+<footer>&copy; Copyright 2021 | All Rights Preserved</footer>
+
+</body>
+</html>
